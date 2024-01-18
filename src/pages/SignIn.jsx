@@ -14,17 +14,20 @@ export const SignIn = () => {
         });
       }
 
-      Alert.success('Signrd in', 4000);
+      Alert.success('Signed in', 4000); // Fix the typo here
     } catch (error) {
       Alert.error(error.message, 4000);
     }
   };
+
   const signInWithFacebook = () => {
     signInWithProvider(new firebase.auth.FacebookAuthProvider());
   };
+
   const signInWithGoogle = () => {
     signInWithProvider(new firebase.auth.GoogleAuthProvider());
   };
+
   return (
     <Container>
       <Grid className="mt-page">
@@ -32,7 +35,7 @@ export const SignIn = () => {
           <Col xs={24} md={12} mdOffset={6}>
             <Panel>
               <div>
-                <h2>WELCOMEE TO CHAT</h2>
+                <h2>WELCOME TO CHAT</h2>
                 <p>Progressive Chat platform newphy</p>
               </div>
               <div className="mt-3">
